@@ -211,7 +211,7 @@ themeButton.addEventListener("click", () => {
 
 // Typing Animation using Typed JS
 var typed = new Typed(".type", {
-  strings: ["a Web", "an Android", "a Blockchain"],
+  strings: ["a Statistician ", "a Data Scientist" ],
   smartBackspace: true,
   startDelay: 1000,
   typeSpeed: 130,
@@ -219,3 +219,17 @@ var typed = new Typed(".type", {
   backSpeed: 60,
   loop: true,
 });
+
+function toggleContent() {
+  const container = document.querySelector('.publication_container');
+  container.classList.toggle('expanded');
+
+  const viewBtn = document.querySelector('.view-btn');
+  if (container.classList.contains('expanded')) {
+    // 확장된 상태: Show Less
+    viewBtn.innerHTML = '<i class="uil uil-angle-double-up"></i> Show Less'; // 아이콘 추가
+  } else {
+    // 축소된 상태: View All
+    viewBtn.innerHTML = '<i class="uil uil-angle-double-down"></i> View All'; // 아이콘 추가
+  }
+}

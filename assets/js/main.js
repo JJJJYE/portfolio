@@ -227,7 +227,7 @@ function toggleContent() {
   const viewBtn = document.querySelector('.view-btn');
   if (container.classList.contains('expanded')) {
     // 확장된 상태: Show Less
-    viewBtn.innerHTML = '<i class="uil uil-angle-double-up"></i> Show Less'; // 아이콘 추가
+    viewBtn.innerHTML = '<i class="uil uil-angle-double-up"></i> Hide'; // 아이콘 추가
   } else {
     // 축소된 상태: View All
     viewBtn.innerHTML = '<i class="uil uil-angle-double-down"></i> View All'; // 아이콘 추가
